@@ -1,0 +1,110 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Set a background color and center the content */
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    color: #343a40;
+}
+
+/* Style the header */
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Style the button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style the profile image */
+#pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    display: none;
+}
+
+/* Style the container for user information */
+.user-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Style each piece of information */
+.user-info div {
+    margin-bottom: 15px;
+    color: #495057;
+    font-size: 1.1rem;
+}
+
+/* Add a title style */
+.user-info div span {
+    font-weight: bold;
+    color: #212529;
+}
+
+/* Additional spacing for the user information text */
+.user-info div::before {
+    content: "- ";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .user-info {
+        padding: 20px;
+    }
+
+    .user-info div {
+        font-size: 1rem;
+    }
+}
